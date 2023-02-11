@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Lnnium</title>
+  <link rel="shortcut icon" href="favicon.ico" type="image/webp">
+  <link rel="icon" href="favicon.ico" type="image/webp">
+  <meta http-equiv="refresh" content="34; url=https://www.pinterest.com/lnnium/">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+  <style>
+    #quoteDisplay {
+      font-family: 'Open Sans', sans-serif;
+      font-size: 14px;
+      font-weight: bold;
+      text-align: center;
+      position: absolute;
+      top: 40%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    
+    .button {
+      display: inline-block;
+      padding: 15px 30px;
+      text-align: center;
+      text-decoration: none;
+      font-size: 16px;
+      margin: 10px;
+      border-radius: 5px;
+    }
+    
+    #refreshBtn {
+      background-color: rgba(99, 0, 230, 0.932);
+      color: white;
+    }
+    
+    #skipBtn {
+      background-color: rgb(7, 1, 0);
+      color: white;
+    }
+    
+    .buttons {
+      position: absolute;
+      bottom: 350px;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      justify-content: center;
+    }
+  </style>
+  <center><iframe data-aa='2165521' src='//ad.a-ads.com/2165521?size=300x250' style='width:300px; height:250px; border:0px; padding:0; overflow:hidden; background-color: transparent;'></iframe></center>
+  <script>
+    // Array of Stoic quotes
+    var quotes = [
+    "“The happiness of your life depends upon the quality of your thoughts.” — Marcus Aurelius",
+      "“If you are distressed by anything external, the pain is not due to the thing itself, but to your own estimate of it; and this you have the power to revoke at any moment.” — Marcus Aurelius",
+      "“The best way to avenge yourself is to be unlike your enemy.” — Marcus Aurelius",
+      "“We are not given control over what happens to us, but we can control how we respond.” — Epictetus",
+      "“The obstacle is the way.” — Epictetus",
+      "“It is our attitude at the beginning of a difficult task which, more than anything else, will affect its successful outcome.” — William Irvine",
+      "“Success is not final, failure is not fatal: it is the courage to continue that counts.” — William Irvine",
+      "“It is not that we have a short time to live, but that we waste a lot of it.” — Seneca",
+      "“No man is free who is not master of himself.” — Epictetus",
+      "“The key is to keep company only with people who uplift you, whose presence calls forth your best.” — Epictetus",
+      "“Do not be embarrassed by your failures, learn from them and start again.” — Richard Branson",
+	    "“Be indifferent to what makes no difference.” — Marcus Aurelius",
+      "“The happiness of those who want to be popular depends on others; the happiness of those who seek wisdom and virtue depends on themselves.” — Epictetus",
+      "“The only true measure of success is the amount of joy you bring to others.” — James Altucher",
+      "“You are not your body, you are not your emotions, you are not your thoughts, you are the observer of these things.” — Epictetus",
+      "“The best way to guarantee a loss is to quit.” — Morgan Freeman",
+      "“The best way to guarantee a loss is to quit.” — Morgan Freeman",
+      "“We must all suffer one of two things: the pain of discipline or the pain of regret.” — Jim Rohn",
+      "“The secret to a good life is to remove your own difficulties, and not to be disturbed by what happens.” — Epictetus",
+      "“Be a good person, but don't waste time proving it.” — Epictetus",
+      "“If you are persistent, you will get it. If you are consistent, you will keep it.” — Les Brown",
+      "“The only way to do great work is to love what you do.” — Steve Jobs",
+      "“What we have to learn to do, we learn by doing.” — Aristotle",
+      "“We are made to persist. That's how we find out who we are.” — Tobias Wolff",
+      "“The only way to make sense out of change is to plunge into it, move with it, and join the dance.” — Alan Watts",
+      "“The only real failure in life is not to be true to the best one knows.” — Buddha",
+      "“No man is free who is not a master of himself.” — Epictetus",
+      "“Life is like a book, some chapters are sad, some are happy, and some are exciting. But if you never turn the page, you will never know what the next chapter holds.” — Unknown",
+      "“It is not what we get. But who we become, what we contribute... that gives meaning to our lives.” — Tony Robbins",
+      "“The best years of your life are the ones in which you decide your problems are your own. You do not blame them on your mother, the ecology, or the president. You realize that you control your own destiny.” — Albert Ellis",
+      "“No one can make you feel inferior without your consent.” — Eleanor Roosevelt",
+      "“Wise men speak because they have something to say; fools because they have to say something.” — Plato",
+      "“The good you do today, often goes unnoticed. But the seed you plant, will bear fruit tomorrow.” — Unknown",
+      "“The most powerful weapon on earth is the human soul on fire.” — Ferdinand Foch",
+      "“The biggest challenge in life is being yourself... in a world trying to make you like everyone else.” — Unknown",
+      "“The only thing necessary for the triumph of evil is for good men to do nothing.” — Edmund Burke",
+      "“The most important thing in life is to learn how to give out love, and to let it come in.” — Morrie Schwartz",
+      "“The greatest gift you can give someone is your own happiness.” — Unknown",
+      "“The only limit to our realization of tomorrow will be our doubts of today.” — Franklin D. Roosevelt"
+
+    ];
+
+    // Function to generate a random quote
+    function getQuote() {
+      var randomQuote = quotes[Math.floor(Math.random() * quotes.length)];
+      document.getElementById("quoteDisplay").innerHTML = randomQuote;
+    }
+    
+    function redirectToLink() {
+      window.location.href = "https://www.pinterest.com/lnnium/";
+    }
+
+    // Call the function to display a quote on page load
+    window.onload = getQuote;
+  </script>
+</head>
+
+<body>
+  <div id="quoteDisplay"></div>
+  <div class="buttons">
+    <button class="button" id="skipBtn" onclick="redirectToLink()">Skip</button>
+    <button class="button" id="refreshBtn" onclick="getQuote()">Generate Stoic Quote!</button>
+    </div>
+</body>
+<head>
+  <meta charset="UTF-8">
+  <title>Redirect Timer</title>
+  <style>
+    #timer {
+      bottom: 50px;
+      text-align: center;
+      color: rgb(99, 0, 230, 0.932);
+    }
+  </style>
+  <script>
+    var count = 35;
+    function startTimer() {
+      setInterval(function() {
+        count--;
+        document.getElementById("timer").innerHTML = "This page will redirect in " + count + " seconds or you can skip.";
+      }, 1000);
+    }
+  </script>
+</head>
+<body onload="startTimer()">
+  <p id="timer">This page will redirect in 35 seconds or you can skip.</p>
+</body>
+</html>
